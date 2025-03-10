@@ -1,0 +1,28 @@
+body {
+    background-image: url("/Users/mickeyaj/Desktop/Code Projects/MP2 Project/img/Gemini_Generated_Image_dy8x2pdy8x2pdy8x.jpeg");
+    background-attachment:fixed;
+    background-position: center;
+}
+
+button {
+    position: fixed;
+    bottom: 150px;
+    right: 575px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    height: 100px;
+    width: 300px;
+
+}
+
+#game-container {
+    position: fixed;
+    background-color: white;
+    border: black 5px;
+    height: 1000px;
+    width: 700px;
+}
