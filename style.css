@@ -1,5 +1,5 @@
 body {
-    background-image: url("/Users/mickeyaj/Desktop/Code Projects/MP2 Project/img/Gemini_Generated_Image_dy8x2pdy8x2pdy8x.jpeg");
+    background-image: url("/Users/mickeyaj/Desktop/Code Projects/MP2 Project/MP2_project/img/school-background.jpeg");
     background-attachment:fixed;
     background-position: center;
 }
@@ -16,7 +16,6 @@ button {
 img {
     height: 100px;
     width: 300px;
-
 }
 
 #game-container {
