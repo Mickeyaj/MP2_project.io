@@ -10,7 +10,7 @@
     }
 
     function initiateGame() {
-        
+        let 
     }
 
     let game = {

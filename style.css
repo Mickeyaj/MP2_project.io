@@ -21,8 +21,11 @@ img {
 
 #game-container {
     position: fixed;
+    top: 0;
+    left: 380px;
+    border: solid 10px black;
+    border-radius: 10px;
     background-color: white;
-    border: black 5px;
-    height: 1000px;
-    width: 700px;
+    height: 812px;
+    width: 720px;
 }
