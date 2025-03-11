@@ -37,7 +37,7 @@ img {
     width: 600px;
     height: auto;
     left: 445px;
-    top: 50px;
+    top: 100px;
 }
 
 #prompt-container p {
@@ -46,17 +46,25 @@ img {
 }
 
 #choices-container {
-    position: fixed;
-    bottom: 50px;
-    left: 448px;
-    height: 400px;
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: auto;
 }
 
-#choices-container img {
-    position: fixed;
-    left: 600px;
-    bottom: 200px;
-    height: 150px;
-    width: 300px;
+.choice {
+    justify-content: center;
+    border: solid 5px black;
+    font-family: 'Pixelify Sans';
+    font-size: 24px;
+    text-align: center;
+    padding: 15px 20px;
+    width: 500px;
+    margin: 15px 20px;
+    position: relative;
+    bottom: 0;
+    right: 270px;
 }
