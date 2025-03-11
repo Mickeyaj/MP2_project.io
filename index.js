@@ -5,9 +5,13 @@
     window.addEventListener('load', init);
 
     function init() {
-        let startButton = document.getElementById('start-button');
-        startButton.addEventListener('click', initiateGame());
+        intro();
     }
+
+    let sroTrustPoints = 50;
+    let safetyPoints = 50;
+    let reputationPoints = 50;
+    let currentStudent = null;
 
     const students = [
         {name: 'Michael', race: 'White', behavior: 'good'},
@@ -81,34 +85,32 @@
         }
     }
 
-    function initiateGame() {
+    function intro() {
+        let introParagraph = "Welcome to Lakeridge High School! Set in the southend of Seattle, it is one of the " +
+                            "handful of schools with an SRO.\n This interactive text-based simulator follows five " +
+                            "different students of different races at random. The choices you make as these students will\n" +
+                            "affect three categories: their safety in school, the trust SROs have in them, and " +
+                            "their reputation amomgst their peers. Choose carefully and have fun!";
 
+        let prompt = document.getElementById('prompt');
+        prompt.textContent = introParagraph;
+
+        let choicesContainer = document.getElementById('choices-container');
+        choicesContainer.innerHTML = "";
+
+        let playButton = document.createElement("button");
+        playButton.className = 'play-button';
+        let playButtonImg = document.createElement("img");
+        playButtonImg.src = 'img/play-button.jpeg';
+        playButtonImg.alt = 'Play Button'
+
+        playButton.appendChild(playButtonImg);
+        playButton.onclick = () => displayScenario(1);
+        choicesContainer.appendChild(playButton);
     }
 
-    let game = {
+    function displayScenario(storyIndex) {
+        
+    }
 
-        sroTrustPoints: 50,
-        reputationPoints: 50,
-        safetyPoints: 50,
-
-        currentStudent: null,
-        currentPrompt: null,
-        choiceOne: null,
-        choiceTwo: null,
-        choiceThree: null,
-
-        morningArrival: function () {
-            if(this.currentStudent.race !== 'White') {
-                this.currentPrompt = 'As you enter school, the SRO randomly selects you for a bag check. You have three choices:';
-                this.choiceOne = 'Cooperate with the search';
-                this.choiceTwo = 'Question why they are searching you.';
-                this.choiceThree = 'Refuse.';
-                let decision = document.getElementById('userInput').value;
-            }
-
-        },
-
-
-
-    };
 })();

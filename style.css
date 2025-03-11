@@ -2,6 +2,7 @@ body {
     background-image: url("/Users/mickeyaj/Desktop/Code Projects/MP2 Project/MP2_project/img/school-background.jpeg");
     background-attachment:fixed;
     background-position: center;
+    font-family: "Pixelify Sans";
 }
 
 button {
@@ -27,4 +28,35 @@ img {
     background-color: white;
     height: 812px;
     width: 720px;
+}
+
+#prompt-container {
+    position: fixed;
+    border: solid 5px black;
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+    left: 445px;
+    top: 50px;
+}
+
+#prompt-container p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#choices-container {
+    position: fixed;
+    bottom: 50px;
+    left: 448px;
+    height: 400px;
+    width: 600px;
+}
+
+#choices-container img {
+    position: fixed;
+    left: 600px;
+    bottom: 200px;
+    height: 150px;
+    width: 300px;
 }
